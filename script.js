@@ -19,7 +19,7 @@ menuItems.forEach(function (menuItem) {
   });
 });
 
-const url = "https://kea-alt-del.dk/t7/api/products?limit=200";
+const url = "https://kea-alt-del.dk/t7/api/products";
 
 fetch(url)
   .then((response) => response.json())
@@ -39,7 +39,11 @@ function listProducts(oneProduct) {
   myClone.querySelector(".productname").textContent = oneProduct.productdisplayname;
   myClone.querySelector(".category").textContent = oneProduct.category;
   myClone.querySelector(".price").textContent = oneProduct.price;
-
+  myClone.querySelector(".smallImage").src = `https://kea-alt-del.dk/t7/images/webp/640/${oneProduct.id}.webp`;
+  myClone.querySelector(".readmore").setAttribute("href", `produkt.html?id=${oneProduct.id}`);
+  if (oneProduct.soldout) {
+    myClone.querySelector("article").classList.add("soldOut");
+  }
   const parent = document.querySelector("main");
   parent.appendChild(myClone);
 }

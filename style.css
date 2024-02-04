@@ -84,11 +84,12 @@ nav a {
   gap: 50px;
 }
 
-.soldout {
-  background-color: red;
+.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: #000;
   color: #fff;
-  font-weight: bold;
-  width: fit-content;
+  padding: 1rem;
 }
 
 /* PRODUKT */
