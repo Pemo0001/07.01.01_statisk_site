@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktliste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="fash4you.gif" alt="logo">
+                </a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="burger-icon bar1"></div>
+                <div class="burger-icon bar2"></div>
+                <div class="burger-icon bar3"></div>
+            </div>
+            <div class="menu-items">
+                <a href="kategori.html">Kategori</a>
+                <a href="produktliste.html">Produktliste</a>
+                <a href="produkt.html">Produkt</a>
+            </div>
+        </nav>
+    </header>
+    <main class="produktliste">
+        <template>
+            <article>
+                <div class="produktliste_grid_item">
+                    <a href="produkt.html">
+                        <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Her kommer der et billede">
+                        <h2 class="productname">Her skal produktnavnet stå</h2>
+                    </a>
+                    <h3 class="category">Her skal kategorien stå</h3>
+                    <div class="price">Her står prisen</div>
+                    <div class="soldout">Sold out</div>
+                    <div class="discount">35% discount</div>
+                </div>
+
+            </article>
+        </template>
+
+
+    </main>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
