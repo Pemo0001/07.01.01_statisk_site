@@ -19,7 +19,10 @@ menuItems.forEach(function (menuItem) {
   });
 });
 
-const url = "https://kea-alt-del.dk/t7/api/products";
+const urlParams = new URLSearchParams(window.location.search);
+const season = urlParams.get("season");
+
+const url = "https://kea-alt-del.dk/t7/api/products?season=" + season;
 
 fetch(url)
   .then((response) => response.json())
@@ -44,6 +47,7 @@ function listProducts(oneProduct) {
   if (oneProduct.soldout) {
     myClone.querySelector("article").classList.add("soldOut");
   }
+  myClone.querySelector(".discounted").innerHTML = `<p>${oneProduct.discount}% off</p>`;
   const parent = document.querySelector("main");
   parent.appendChild(myClone);
 }

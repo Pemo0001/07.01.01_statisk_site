@@ -53,24 +53,8 @@ nav a {
   padding-top: 6rem;
 }
 
-.kategori_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
-}
-
-.kategori_grid_item {
-  background-color: #e2dfc0;
-}
-
-.kategori_grid_item h2 {
-  display: flex;
-  justify-content: center;
-  color: #000;
-}
-
-.kategori_grid_item a {
-  text-decoration: none;
+.kategori_billede {
+  width: 50%;
 }
 
 /* PRODUKTLISTE */
