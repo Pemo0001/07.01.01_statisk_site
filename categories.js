@@ -3,7 +3,9 @@ fetch("https://kea-alt-del.dk/t7/api/seasons")
   .then(showCategories);
 
 function showCategories(cats) {
-  cats.forEach(showCategory);
+  const sorted = [cats[3], cats[1], cats[2], cats[0]];
+  //3,1,2,0
+  sorted.forEach(showCategory);
 }
 
 function showCategory(cat) {
