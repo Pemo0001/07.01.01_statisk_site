@@ -15,6 +15,6 @@ function showCategory(cat) {
   clone.querySelector("a").href = `produktliste.html?season=${cat.season}`;
   clone.querySelector("img").src = `${cat.season}.webp`;
 
-  const parent = document.querySelector(".season ol");
+  const parent = document.querySelector(".season");
   parent.appendChild(clone);
 }

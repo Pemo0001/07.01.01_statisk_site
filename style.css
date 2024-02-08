@@ -48,13 +48,21 @@ nav a {
 /* KATEGORI */
 
 .kategori {
-  max-width: 1080px;
+  max-width: 400px;
   margin: 0 auto;
   padding-top: 6rem;
 }
 
-.kategori_billede {
-  width: 50%;
+.season img {
+  margin-bottom: 2rem;
+}
+
+.season a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
 }
 
 /* PRODUKTLISTE */
